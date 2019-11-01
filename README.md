@@ -13,6 +13,17 @@ and [creating pages](https://jekyllrb.com/docs/pages/).
 - **GitLab**: Simply fork this repository and start editing the `_config.yml` file!  
 - **GitHub**: Fork this reposity and create a branch named `gh-pages`, then start editing the `_config.yml` file!
 
+# Local installation
+‘‘‘ bash
+git clone https://github.com/a1rb4Ck/fred_website
+git checkout gh-pages
+# brew install brew-gem
+gem install bundler -v 1.17.3
+# brew gem install bundler 1.17.3
+bundle _1.17.3_ install
+bundle exec jekyll serve
+‘‘‘
+
 # Issues
 
 If you would like to report a bug, ask a question, request a feature, feel free to do so on [the GitLab repository](https://gitlab.com/andrewbanchich/lens-jekyll-theme) and I will be more than happy to help!
