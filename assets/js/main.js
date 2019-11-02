@@ -4,6 +4,16 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* YouTube API */
+youtube = function() {
+  var tag = document.createElement('script');
+
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+}
+var player;
+
 var main = (function($) { var _ = {
 
 	/**
@@ -417,56 +427,70 @@ var main = (function($) { var _ = {
 						s;
 
 					// Slide object.
-						s = {
-							$parent: $this,
-							$slide: null,
-							$slideImage: null,
-							$slideCaption: null,
-							url: $thumbnail.attr('href'),
-							loaded: false
-						};
+					s = {
+						$parent: $this,
+						$slide: null,
+						$slideImage: null,
+						$slideCaption: null,
+						url: $thumbnail.attr('href'),
+						videoId: $thumbnail.attr('data-videoId'),
+						thumbnailImg: $thumbnail.attr('data-thumbnail'),
+						loaded: false
+					};
 
 					// Parent.
-						$this.attr('tabIndex', '-1');
+					$this.attr('tabIndex', '-1');
 
 					// Slide.
 
-						// Create elements.
-	 						s.$slide = $('<div class="slide"><div class="caption"></div><div class="image"></div></div>');
+					// Create elements.
+					if (s.url == null){  // if embedded youtube iframe
+						// s.$slide = $('<div class="slide"><div class="caption"></div><iframe class="image" width="320px" height="240px" style="pointer-events: none; cursor: default;" src="' + s.iframe + '" alt="" allowfullscreen frameborder="0"></iframe></div>');
+						// s.$slide = $('<div class="slide"><div class="caption"></div><div id="video' + s.videoId + '" class="image" style="pointer-events: none; cursor: default;" alt="" frameborder="0"></div></div>');
+						s.$slide = $('<div class="slide"><div class="caption"></div><div id="video' + s.videoId + '" class="image" style="pointer-events: none; cursor: default;"  alt="" frameborder="0"></div></div>');
+						// $("body").append('<iframe id="existing-iframe-example" width="200" height="150" src="https://www.youtube.com/embed/KtEIMC58sZo?iframe_api" frameborder="0" enablejsapi="1"></iframe>');
+					} else {
+							s.$slide = $('<div class="slide"><div class="caption"></div><div class="image"></div></div>');
+					}
 
-	 					// Image.
- 							s.$slideImage = s.$slide.children('.image');
+ 					// Image.
+					s.$slideImage = s.$slide.children('.image');
 
- 							// Set background stuff.
-	 							s.$slideImage
-		 							.css('background-image', '')
-		 							.css('background-position', ($thumbnail.data('position') || 'center'));
+					// Set background stuff.
+					s.$slideImage
+ 						.css('background-image', '')
+ 						.css('background-position', ($thumbnail.data('position') || 'center'));
 
-						// Caption.
-							s.$slideCaption = s.$slide.find('.caption');
+					// Caption.
+					s.$slideCaption = s.$slide.find('.caption');
 
-							// Move everything *except* the thumbnail itself to the caption.
-								$this.children().not($thumbnail)
-									.appendTo(s.$slideCaption);
+					// Move everything *except* the thumbnail itself to the caption.
+					$this.children().not($thumbnail)
+						.appendTo(s.$slideCaption);
 
 					// Preload?
-						if (_.settings.preload) {
+					if (_.settings.preload) {
 
+						if (s.url == null){  // if embedded youtube iframe
+							// Set slide's background image to yt thumbnail
+							s.$slideImage
+								.css('background-image', 'url(' + s.thumbnailImg + ')');
+						} else {  // if it's an image
 							// Force image to download.
-								var $img = $('<img src="' + s.url + '" />');
+							var $img = $('<img src="' + s.url + '" />');
 
 							// Set slide's background image to it.
-								s.$slideImage
-									.css('background-image', 'url(' + s.url + ')');
-
-							// Mark slide as loaded.
-								s.$slide.addClass('loaded');
-								s.loaded = true;
-
+							s.$slideImage
+								.css('background-image', 'url(' + s.url + ')');
 						}
+						// Mark slide as loaded.
+						s.$slide.addClass('loaded');
+						s.loaded = true;
+
+					}
 
 					// Add to slides array.
-						_.slides.push(s);
+					_.slides.push(s);
 
 					// Set thumbnail's index.
 						$thumbnail.data('index', _.slides.length - 1);
@@ -586,28 +610,84 @@ var main = (function($) { var _ = {
 									newSlide.$slide.addClass('loading');
 
 								// Wait for it to load.
-									$('<img src="' + newSlide.url + '" />').on('load', function() {
+								if (newSlide.url == null){  // if embedded youtube iframe
+									// $('<iframe src="https://www.youtube.com/embed/' + newSlide.url + 'autoplay=1&origin=https://frednagorny.com&cc_load_policy=0&color=white&controls=2&disablekb=0&fs=1&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=0" />')
+									// $('<iframe src="' + newSlide.url + '" />').on('load', function() {
+									// $('iframe').on('load', function() {
 									//window.setTimeout(function() {
 
-										// Set background image.
-											newSlide.$slideImage
-												.css('background-image', 'url(' + newSlide.url + ')');
+									var player = new YT.Player('video' + newSlide.videoId, {
+								            	videoId: newSlide.videoId,
+								            	height: '320',
+											    width: '640',
+									            events: {
+									              'onReady': onPlayerReady,
+									              'onStateChange': onPlayerStateChange
+									            },
+									            playerVars: {
+											      'autoplay': 1,
+											      'controls': 0,
+											      'disablekb': 1,
+											      'fs': 0,
+											      'loop': 1,
+											      'modestbranding': 1,
+											      'rel': 0,
+											      'showinfo': 0,
+											      'mute': 0,
+											      'autohide': 1
+											    }
+								            });
 
+										function onPlayerReady(event) {
+											console.log('player ready');
+										}
+
+										function onPlayerStateChange(event) {
+								        	//When the video has ended
+								            if (event.data == YT.PlayerState.ENDED) {
+								            	console.log('player ended');
+								            	_.next();
+								                event.target.destroy();
+								            }
+				        				}
+				        				// youtube();
+
+									// Set background image.
+									newSlide.$slideImage
+										.css('background-image', 'url(' + newSlide.thumbnailImg + ')');
+
+									// Mark as loaded.
+									newSlide.loaded = true;
+									newSlide.$slide.removeClass('loading');
+
+									// Mark as active.
+									newSlide.$slide.addClass('active');
+
+									// Unlock.
+									window.setTimeout(function() {
+										_.locked = false;
+									}, 100);
+
+								} else {
+									$('<img src="' + newSlide.url + '" />').on('load', function() {
+										// Set background image.
+										newSlide.$slideImage
+											.css('background-image', 'url(' + newSlide.url + ')');
 										// Mark as loaded.
-											newSlide.loaded = true;
-											newSlide.$slide.removeClass('loading');
+										newSlide.loaded = true;
+										newSlide.$slide.removeClass('loading');
 
 										// Mark as active.
-											newSlide.$slide.addClass('active');
+										newSlide.$slide.addClass('active');
 
 										// Unlock.
-											window.setTimeout(function() {
-												_.locked = false;
-											}, 100);
+										window.setTimeout(function() {
+											_.locked = false;
+										}, 100);
 
 									//}, 1000);
 									});
-
+								}
 							}, 100);
 
 						}

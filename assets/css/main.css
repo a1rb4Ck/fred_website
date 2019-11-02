@@ -874,6 +874,10 @@
 					display: block;
 					width: 100%;
 				}
+				#thumbnails article .thumbnail iframe {
+					display: block;
+					width: 100%;
+				}
 
 				#thumbnails article .thumbnail:before {
 					-moz-pointer-events: none;
