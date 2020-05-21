@@ -1,5 +1,5 @@
 ---
-date: 1992-05-01
+date: 1990-01-03
 title: Making of Le Pantin
 titleUrl: https://www.youtube.com/watch?v=NEXIDq8hX3Y
 
