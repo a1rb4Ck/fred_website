@@ -1,3 +1,6 @@
+---
+layout: compress
+---
 <!DOCTYPE HTML>
 <!--
 	Lens by HTML5 UP
@@ -12,15 +15,10 @@
 
         <!-- Main -->
         <div id="main">
-
-        {% include header.html %}
-        
-        {{ content }}
-
-        {% include footer.html %}
-
+            {% include header.html %}
+            {{ content }}
+            {% include footer.html %}
         </div>
-
         <!-- Scripts -->
         <script src="{{ "assets/js/jquery.min.js" | absolute_url }}"></script>
         <script src="https://www.youtube.com/iframe_api"></script>

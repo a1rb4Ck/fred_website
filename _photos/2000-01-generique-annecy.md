@@ -1,8 +1,10 @@
 ---
+date: 2000-06-15
 title: Générique d'ouverture du Festival d'Annecy 2000
+titleUrl: https://www.youtube.com/watch?v=pSCxsU8HsAY
 
 videoId: pSCxsU8HsAY
-thumbnail: https://img.youtube.com/vi/pSCxsU8HsAY/hqdefault.jpg
+image: https://img.youtube.com/vi/pSCxsU8HsAY/hqdefault.jpg
 
 caption: "Réalisé en 2000 pour le Festival d'Annecy afin d'animer son logo et d'être diffusé en ouverture des séances de projection. Une illustration de deux siècles d'animation avec les techniques de chaque époques : zootrope, table d'animation, banc titre, ordinateur."
 ---

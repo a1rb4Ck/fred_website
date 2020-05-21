@@ -447,7 +447,7 @@ var main = (function($) { var _ = {
 					if (s.url == null){  // if embedded youtube iframe
 						// s.$slide = $('<div class="slide"><div class="caption"></div><iframe class="image" width="320px" height="240px" style="pointer-events: none; cursor: default;" src="' + s.iframe + '" alt="" allowfullscreen frameborder="0"></iframe></div>');
 						// s.$slide = $('<div class="slide"><div class="caption"></div><div id="video' + s.videoId + '" class="image" style="pointer-events: none; cursor: default;" alt="" frameborder="0"></div></div>');
-						s.$slide = $('<div class="slide"><div class="caption"></div><div id="video' + s.videoId + '" class="image" style="pointer-events: none; cursor: default;"  alt="" frameborder="0"></div></div>');
+						s.$slide = $('<div class="slide"><div class="caption"></div><div id="video' + s.videoId + '" class="image" style="cursor: default;"  alt="" frameborder="0"></div></div>');
 						// $("body").append('<iframe id="existing-iframe-example" width="200" height="150" src="https://www.youtube.com/embed/KtEIMC58sZo?iframe_api" frameborder="0" enablejsapi="1"></iframe>');
 					} else {
 							s.$slide = $('<div class="slide"><div class="caption"></div><div class="image"></div></div>');
@@ -616,7 +616,10 @@ var main = (function($) { var _ = {
 									// $('iframe').on('load', function() {
 									//window.setTimeout(function() {
 
-									var player = new YT.Player('video' + newSlide.videoId, {
+									/* Wait for Youtube API */
+									function readyYoutube(){
+									    if((typeof YT !== "undefined") && YT && YT.Player){
+									        player = new YT.Player('video' + newSlide.videoId, {
 								            	videoId: newSlide.videoId,
 								            	height: '320',
 											    width: '640',
@@ -626,31 +629,41 @@ var main = (function($) { var _ = {
 									            },
 									            playerVars: {
 											      'autoplay': 1,
+											      'cc_load_policy': 0,
 											      'controls': 0,
 											      'disablekb': 1,
+											      'enablejsapi': 1,
 											      'fs': 0,
+											      'iv_load_policy': 3,
 											      'loop': 1,
 											      'modestbranding': 1,
+											      'origin': 'https://frednagorny.fr',
 											      'rel': 0,
+											      'ecver': 2,
 											      'showinfo': 0,
 											      'mute': 0,
 											      'autohide': 1
 											    }
 								            });
+									    } else {
+									        setTimeout(readyYoutube, 100);
+									    }
+									}
+									readyYoutube();
 
-										function onPlayerReady(event) {
-											console.log('player ready');
-										}
+									function onPlayerReady(event) {
+										console.debug('player ready');
+									}
 
-										function onPlayerStateChange(event) {
-								        	//When the video has ended
-								            if (event.data == YT.PlayerState.ENDED) {
-								            	console.log('player ended');
-								            	_.next();
-								                event.target.destroy();
-								            }
-				        				}
-				        				// youtube();
+									function onPlayerStateChange(event) {
+							        	//When the video has ended
+							            if (event.data == YT.PlayerState.ENDED) {
+							            	console.debug('player ended');
+							            	_.next();
+							                event.target.destroy();
+							            }
+			        				}
+			        				// youtube();
 
 									// Set background image.
 									newSlide.$slideImage
