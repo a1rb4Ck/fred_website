@@ -4,7 +4,7 @@ title: Fred Nagorny
 ---
 
 <!-- Thumbnail -->
-<section id="thumbnails">{% for photo in site.photos %}
+<section id="thumbnails">{% for photo in site.photos reversed %}
 	<article>
         {% if photo.videoId %}
             <a class="thumbnail" data-videoId="{{ photo.videoId }}" data-thumbnail="{{ photo.image }}" data-position="left center">

@@ -2,6 +2,8 @@
 	Lens by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Originaly ported to Jekyll by andrewbanchich https://github.com/andrewbanchich/lens-jekyll-theme 2016-2021
+	Finally edited to supported a mix of images + Youtube integration by Pierre Nagorny 2019-2022
 */
 
 /* YouTube API */
@@ -161,7 +163,7 @@ var main = (function($) { var _ = {
 					'<div class="inner">' +
 						'<div class="nav-next"></div>' +
 						'<div class="nav-previous"></div>' +
-						'<div class="toggle"></div>' +
+						// '<div class="toggle"></div>' +
 					'</div>' +
 				'</div>'
 			).appendTo(_.$body);
@@ -179,16 +181,6 @@ var main = (function($) { var _ = {
 
 			_.$toggle = $('.toggle');
 
-		// IE<9: Fix viewer width (no calc support).
-			if (skel.vars.IEVersion < 9)
-				_.$window
-					.on('resize', function() {
-						window.setTimeout(function() {
-							_.$viewer.css('width', _.$window.width() - _.$main.width());
-						}, 100);
-					})
-					.trigger('resize');
-
 	},
 
 	/**
@@ -198,17 +190,17 @@ var main = (function($) { var _ = {
 
 		// Window.
 
-			// Remove is-loading-* classes on load.
+			// Remove is-preload-* classes on load.
 				_.$window.on('load', function() {
 
-					_.$body.removeClass('is-loading-0');
+					_.$body.removeClass('is-preload-0');
 
 					window.setTimeout(function() {
-						_.$body.removeClass('is-loading-1');
+						_.$body.removeClass('is-preload-1');
 					}, 100);
 
 					window.setTimeout(function() {
-						_.$body.removeClass('is-loading-2');
+						_.$body.removeClass('is-preload-2');
 					}, 100 + Math.max(_.settings.layoutDuration - 150, 0));
 
 				});
@@ -218,11 +210,11 @@ var main = (function($) { var _ = {
 
 				_.$window.on('resize', function() {
 
-					_.$body.addClass('is-loading-0');
+					_.$body.addClass('is-preload-0');
 					window.clearTimeout(resizeTimeout);
 
 					resizeTimeout = window.setTimeout(function() {
-						_.$body.removeClass('is-loading-0');
+						_.$body.removeClass('is-preload-0');
 					}, 100);
 
 				});
@@ -232,7 +224,7 @@ var main = (function($) { var _ = {
 			// Hide main wrapper on tap (<= medium only).
 				_.$viewer.on('touchend', function() {
 
-					if (skel.breakpoint('medium').active)
+					if (breakpoints.active('medium'))
 						_.hide();
 
 				});
@@ -288,7 +280,7 @@ var main = (function($) { var _ = {
 					.on('touchstart', function(event) {
 
 						// Bail on xsmall.
-							if (skel.breakpoint('xsmall').active)
+						if (breakpoints.active('<=xsmall'))
 								return;
 
 						// Record start position.
@@ -299,7 +291,7 @@ var main = (function($) { var _ = {
 					.on('touchmove', function(event) {
 
 						// Bail on xsmall.
-							if (skel.breakpoint('xsmall').active)
+						if (breakpoints.active('<=xsmall'))
 								return;
 
 						// No start position recorded? Bail.
@@ -375,7 +367,7 @@ var main = (function($) { var _ = {
 			_.$window.on('keydown', function(event) {
 
 				// Ignore if xsmall is active.
-					if (skel.breakpoint('xsmall').active)
+					if (breakpoints.active('<=xsmall'))
 						return;
 
 				// Check keycode.
@@ -427,70 +419,70 @@ var main = (function($) { var _ = {
 						s;
 
 					// Slide object.
-					s = {
-						$parent: $this,
-						$slide: null,
-						$slideImage: null,
-						$slideCaption: null,
-						url: $thumbnail.attr('href'),
-						videoId: $thumbnail.attr('data-videoId'),
-						thumbnailImg: $thumbnail.attr('data-thumbnail'),
-						loaded: false
-					};
+						s = {
+							$parent: $this,
+							$slide: null,
+							$slideImage: null,
+							$slideCaption: null,
+							url: $thumbnail.attr('href'),
+							videoId: $thumbnail.attr('data-videoId'),
+							thumbnailImg: $thumbnail.attr('data-thumbnail'),
+							loaded: false
+						};
 
 					// Parent.
 					$this.attr('tabIndex', '-1');
 
 					// Slide.
 
-					// Create elements.
-					if (s.url == null){  // if embedded youtube iframe
-						// s.$slide = $('<div class="slide"><div class="caption"></div><iframe class="image" width="320px" height="240px" style="pointer-events: none; cursor: default;" src="' + s.iframe + '" alt="" allowfullscreen frameborder="0"></iframe></div>');
-						// s.$slide = $('<div class="slide"><div class="caption"></div><div id="video' + s.videoId + '" class="image" style="pointer-events: none; cursor: default;" alt="" frameborder="0"></div></div>');
-						s.$slide = $('<div class="slide"><div class="caption"></div><div id="video' + s.videoId + '" class="image" style="cursor: default;"  alt="" frameborder="0"></div></div>');
-						// $("body").append('<iframe id="existing-iframe-example" width="200" height="150" src="https://www.youtube.com/embed/KtEIMC58sZo?iframe_api" frameborder="0" enablejsapi="1"></iframe>');
-					} else {
-							s.$slide = $('<div class="slide"><div class="caption"></div><div class="image"></div></div>');
-					}
+						// Create elements.
+							if (s.url == null){  // if embedded youtube iframe
+								// s.$slide = $('<div class="slide"><div class="caption"></div><iframe class="image" width="320px" height="240px" style="pointer-events: none; cursor: default;" src="' + s.iframe + '" alt="" allowfullscreen frameborder="0"></iframe></div>');
+								// s.$slide = $('<div class="slide"><div class="caption"></div><div id="video' + s.videoId + '" class="image" style="pointer-events: none; cursor: default;" alt="" frameborder="0"></div></div>');
+								s.$slide = $('<div class="slide"><div class="caption"></div><div id="video' + s.videoId + '" class="image" style="cursor: default;"  alt="" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;"></div></div>');
+								// $("body").append('<iframe id="existing-iframe-example" width="200" height="150" src="https://www.youtube-nocookie.com/embed/KtEIMC58sZo?iframe_api" frameborder="0" enablejsapi="1"></iframe>');
+							} else {
+									s.$slide = $('<div class="slide"><div class="caption"></div><div class="image"></div></div>');
+							}
 
- 					// Image.
-					s.$slideImage = s.$slide.children('.image');
+						// Image.
+							s.$slideImage = s.$slide.children('.image');
 
-					// Set background stuff.
-					s.$slideImage
- 						.css('background-image', '')
- 						.css('background-position', ($thumbnail.data('position') || 'center'));
+							// Set background stuff.
+								s.$slideImage
+									.css('background-image', '')
+									.css('background-position', ($thumbnail.data('position') || 'center'));
 
-					// Caption.
-					s.$slideCaption = s.$slide.find('.caption');
+						// Caption.
+							s.$slideCaption = s.$slide.find('.caption');
 
-					// Move everything *except* the thumbnail itself to the caption.
-					$this.children().not($thumbnail)
-						.appendTo(s.$slideCaption);
+							// Move everything *except* the thumbnail itself to the caption.
+								$this.children().not($thumbnail)
+									.appendTo(s.$slideCaption);
 
 					// Preload?
-					if (_.settings.preload) {
+						if (_.settings.preload) {
 
-						if (s.url == null){  // if embedded youtube iframe
-							// Set slide's background image to yt thumbnail
-							s.$slideImage
-								.css('background-image', 'url(' + s.thumbnailImg + ')');
-						} else {  // if it's an image
-							// Force image to download.
-							var $img = $('<img src="' + s.url + '" />');
+							if (s.url == null){  // if embedded youtube iframe
+								// Set slide's background image to yt thumbnail
+									s.$slideImage
+										.css('background-image', 'url(' + s.thumbnailImg + ')');
+							} else {  // if it's an image
+								// Force image to download.
+									var $img = $('<img src="' + s.url + '" />');
 
-							// Set slide's background image to it.
-							s.$slideImage
-								.css('background-image', 'url(' + s.url + ')');
+								// Set slide's background image to it.
+									s.$slideImage
+										.css('background-image', 'url(' + s.url + ')');
+							}
+							// Mark slide as loaded.
+								s.$slide.addClass('loaded');
+								s.loaded = true;
+
 						}
-						// Mark slide as loaded.
-						s.$slide.addClass('loaded');
-						s.loaded = true;
-
-					}
 
 					// Add to slides array.
-					_.slides.push(s);
+						_.slides.push(s);
 
 					// Set thumbnail's index.
 						$thumbnail.data('index', _.slides.length - 1);
@@ -504,21 +496,13 @@ var main = (function($) { var _ = {
 	 */
 	init: function() {
 
-		// IE<10: Zero out transition delays.
-			if (skel.vars.IEVersion < 10) {
-
-				_.settings.slideDuration = 0;
-				_.settings.layoutDuration = 0;
-
-			}
-
-		// Skel.
-			skel.breakpoints({
-				xlarge: '(max-width: 1680px)',
-				large: '(max-width: 1280px)',
-				medium: '(max-width: 980px)',
-				small: '(max-width: 736px)',
-				xsmall: '(max-width: 480px)'
+		// Breakpoints.
+			breakpoints({
+				xlarge:  [ '1281px',  '1680px' ],
+				large:   [ '981px',   '1280px' ],
+				medium:  [ '737px',   '980px'  ],
+				small:   [ '641px',   '736px'  ],
+				xsmall:  [ null,      '640px'  ]
 			});
 
 		// Everything else.
@@ -526,18 +510,13 @@ var main = (function($) { var _ = {
 			_.initViewer();
 			_.initEvents();
 
-		// Initial slide.
-			window.setTimeout(function() {
+		// Show first slide if xsmall isn't active.
+			breakpoints.on('>xsmall', function() {
 
-				// Show first slide if xsmall isn't active or it just deactivated.
-					skel.on('-xsmall !xsmall', function() {
+				if (_.current === null)
+					_.switchTo(0, true);
 
-						if (_.current === null)
-							_.switchTo(0, true);
-
-					});
-
-			}, 0);
+			});
 
 	},
 
@@ -549,7 +528,7 @@ var main = (function($) { var _ = {
 
 		// Already at index and xsmall isn't active? Bail.
 			if (_.current == index
-			&&	!skel.breakpoint('xsmall').active)
+			&&	!breakpoints.active('<=xsmall'))
 				return;
 
 		// Locked? Bail.
@@ -561,8 +540,7 @@ var main = (function($) { var _ = {
 
 		// Hide main wrapper if medium is active.
 			if (!noHide
-			&&	skel.breakpoint('medium').active
-			&&	skel.vars.IEVersion > 8)
+			&&	breakpoints.active('<=medium'))
 				_.hide();
 
 		// Get slides.
@@ -611,7 +589,7 @@ var main = (function($) { var _ = {
 
 								// Wait for it to load.
 								if (newSlide.url == null){  // if embedded youtube iframe
-									// $('<iframe src="https://www.youtube.com/embed/' + newSlide.url + 'autoplay=1&origin=https://frednagorny.com&cc_load_policy=0&color=white&controls=2&disablekb=0&fs=1&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=0" />')
+									// $('<iframe src="https://www.youtube-nocookie.com/embed/' + newSlide.url + 'autoplay=1&origin=https://www.frednagorny.com&cc_load_policy=0&color=white&controls=2&disablekb=0&fs=1&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=0" />')
 									// $('<iframe src="' + newSlide.url + '" />').on('load', function() {
 									// $('iframe').on('load', function() {
 									//window.setTimeout(function() {
@@ -665,38 +643,38 @@ var main = (function($) { var _ = {
 			        				}
 			        				// youtube();
 
-									// Set background image.
-									newSlide.$slideImage
-										.css('background-image', 'url(' + newSlide.thumbnailImg + ')');
+										// Set background image.
+											newSlide.$slideImage
+												.css('background-image', 'url(' + newSlide.thumbnailImg + ')');
 
-									// Mark as loaded.
-									newSlide.loaded = true;
-									newSlide.$slide.removeClass('loading');
+										// Mark as loaded.
+											newSlide.loaded = true;
+											newSlide.$slide.removeClass('loading');
 
-									// Mark as active.
-									newSlide.$slide.addClass('active');
+										// Mark as active.
+											newSlide.$slide.addClass('active');
 
-									// Unlock.
-									window.setTimeout(function() {
-										_.locked = false;
-									}, 100);
+										// Unlock.
+											window.setTimeout(function() {
+												_.locked = false;
+											}, 100);
 
 								} else {
 									$('<img src="' + newSlide.url + '" />').on('load', function() {
 										// Set background image.
-										newSlide.$slideImage
-											.css('background-image', 'url(' + newSlide.url + ')');
+											newSlide.$slideImage
+												.css('background-image', 'url(' + newSlide.url + ')');
 										// Mark as loaded.
-										newSlide.loaded = true;
-										newSlide.$slide.removeClass('loading');
+											newSlide.loaded = true;
+											newSlide.$slide.removeClass('loading');
 
 										// Mark as active.
-										newSlide.$slide.addClass('active');
+											newSlide.$slide.addClass('active');
 
 										// Unlock.
-										window.setTimeout(function() {
-											_.locked = false;
-										}, 100);
+											window.setTimeout(function() {
+												_.locked = false;
+											}, 100);
 
 									//}, 1000);
 									});

@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "lens_jekyll_theme"
-  spec.version       = "1.2"
+  spec.version       = "1.3"
   spec.authors       = ["Andrew Banchich", "Pierre Nagorny"]
   spec.email         = ["andrewbanchich@gmail.com"]
 
@@ -15,9 +15,9 @@ Gem::Specification.new do |spec|
   end
 
   spec.add_runtime_dependency "jekyll", "~> 4.0", "< 5.0"
-  spec.add_runtime_dependency "jekyll-sitemap", "~> 1.3"
-  spec.add_runtime_dependency "jekyll-feed", "~> 0.1"
-  spec.add_runtime_dependency "jekyll-include-cache", "~> 0.1"
+  spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"
+  spec.add_runtime_dependency "jekyll-feed", "~> 0.16"
+  spec.add_runtime_dependency "jekyll-include-cache", "~> 0.2.1"
 
-  spec.add_development_dependency "bundler", "~> 1.12"
+  spec.add_development_dependency "bundler", "~> 2.3.11"
 end

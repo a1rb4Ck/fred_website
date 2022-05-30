@@ -1,8 +1,8 @@
 # Site settings
-timezone: America/New_York
+timezone:  Europe/Paris
 encoding: UTF-8
-lang: fr-FR
-locale: fr-FR
+lang: en-EN
+locale: en-EN
 branch: gh-pages
 future: true
 
@@ -11,7 +11,7 @@ title_separator : "-"
 tagline: "animation shorts and making of"
 description: "An animation professor portfolio."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://frednagorny.fr" # the base hostname & protocol for your site
+url: "https://www.frednagorny.fr" # the base hostname & protocol for your site
 author: Fred Nagorny
 # picture: "/assets/images/logo.jpg"
 
@@ -48,7 +48,7 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+  syntax_highlighter: null
 
 # Sass/SCSS
 sass:

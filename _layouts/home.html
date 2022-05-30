@@ -4,14 +4,16 @@ layout: compress
 <!DOCTYPE HTML>
 <!--
 	Lens by HTML5 UP
-	html5up.net | @ajlkn
+	html5up.net | @ajlkn | 2016-2022
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Originaly ported to Jekyll by andrewbanchich https://github.com/andrewbanchich/lens-jekyll-theme 2016-2021
+	Finally edited to supported a mix of images + Youtube integration by Pierre Nagorny 2019-2022
 -->
 <html>
 
 {% include head.html %}
 
-    <body class="is-loading-0 is-loading-1 is-loading-2">
+    <body class="is-preload-0 is-preload-1 is-preload-2">
 
         <!-- Main -->
         <div id="main">
@@ -22,8 +24,8 @@ layout: compress
         <!-- Scripts -->
         <script src="{{ "assets/js/jquery.min.js" | absolute_url }}"></script>
         <script src="https://www.youtube.com/iframe_api"></script>
-        <script src="{{ "assets/js/skel.min.js" | absolute_url }}"></script>
-        <!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}></script><![endif]-->
+        <script src="{{ "assets/js/browser.min.js" | absolute_url }}"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
         <script src="{{ "assets/js/main.js" | absolute_url }}"></script>
 
     </body>

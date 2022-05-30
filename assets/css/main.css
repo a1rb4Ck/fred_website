@@ -65,7 +65,7 @@
 
 	*/
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 640px) {
 
 		html, body {
 			min-width: 320px;
@@ -73,7 +73,7 @@
 
 	}
 
-	body.is-loading-0 *, body.is-loading-0 *:before, body.is-loading-0 *:after {
+	body.is-preload-0 *, body.is-preload-0 *:before, body.is-preload-0 *:after {
 		-moz-animation: none !important;
 		-webkit-animation: none !important;
 		-ms-animation: none !important;
@@ -410,7 +410,7 @@
 		.select-wrapper:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			font-family: "FontAwesome";
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
@@ -477,7 +477,7 @@
 			input[type="radio"] + label:before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
+				font-family: "FontAwesome";
 				font-style: normal;
 				font-weight: normal;
 				text-transform: none !important;
@@ -560,7 +560,7 @@
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			font-family: "FontAwesome";
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
@@ -623,7 +623,7 @@
 				}
 
 				ul.icons li .icon:before {
-					font-size: 1.5rem;
+					font-size: 2rem;
 				}
 
 		ul.actions {
@@ -725,7 +725,7 @@
 		overflow-y: auto;
 		text-align: right;
 		visibility: visible;
-		z-index: 10000;
+		z-index: 3;
 		right: 0;
 	}
 
@@ -735,22 +735,28 @@
 			top: 0;
 			width: 4em;
 			height: 4em;
-			background-image: url("images/close-small-alt.svg");
+			background-image: url("images/close-alt.svg");
 			background-repeat: no-repeat;
-			background-size: 32px 32px;
+			background-size: 64px 64px;
 			cursor: pointer;
-			display: none;
 			z-index: 1;
-			background-position: 0.5em 0.5em;
+			background-position: 0 0;
 			left: 0;
 		}
 
 		body.fullscreen #main {
-			visibility: hidden;
-			right: -22.5em;
+			/* visibility: hidden; */
+			/* right: -22.5em; */
+			right: -18.5em;
+			opacity: 0.75;
 		}
 
-		body.is-loading-1 #main {
+		body.fullscreen #main .toggle {
+			background-image: url("images/open-alt.svg") !important;
+			height: 100% !important;
+		}
+
+		body.is-preload-1 #main {
 			opacity: 0;
 			right: -2em;
 		}
@@ -762,36 +768,33 @@
 			}
 
 				body.fullscreen #main {
-					right: -19em;
+					/* right: -19em; */
+					right: -15em;
 				}
 
 		}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 640px) {
 
-			#main {
-				background: rgba(255, 255, 255, 0.925);
+			#header {
+				padding: 0.75em 2.25em 1.75em 2.25em !important;
 			}
 
-				#main .toggle {
-					display: block;
-				}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
 			#main {
-				-moz-transition: opacity 0.5s ease, visibility 0.5s;
-				-webkit-transition: opacity 0.5s ease, visibility 0.5s;
-				-ms-transition: opacity 0.5s ease, visibility 0.5s;
-				transition: opacity 0.5s ease, visibility 0.5s;
+				/* -moz-transition: background-color 0.5s ease, opacity 0.5s ease;
+				-webkit-transition: background-color 0.5s ease, opacity 0.5s ease;
+				-ms-transition: background-color 0.5s ease, opacity 0.5s ease;
+				transition: background-color 0.5s ease, opacity 0.5s ease; */
+				-moz-transition: none;
+				-webkit-transition: none;
+				-ms-transition: none;
+				transition: none;
 				width: 100%;
 				background: #fff;
 				text-align: center;
 			}
 
-				body.is-loading-1 #main {
+				body.is-preload-1 #main {
 					left: auto !important;
 					right: auto !important;
 				}
@@ -799,11 +802,16 @@
 				body.fullscreen #main {
 					left: auto !important;
 					right: auto !important;
-					opacity: 0;
+					opacity: 0.75;
+					z-index: 1;
 				}
 
 				#main .toggle {
 					display: none;
+				}
+
+				body.fullscreen #main .toggle {
+					background-image: url("images/open-alt.svg") !important;
 				}
 
 		}
@@ -811,7 +819,7 @@
 /* Header */
 
 	#header {
-		padding: 3em 2.25em 1.75em 2.25em ;
+		padding: 4em 2.25em 1.75em 2.25em ;
 	}
 
 		#header h1 {
@@ -911,7 +919,7 @@
 				opacity: 1;
 			}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 640px) {
 
 			#thumbnails article .thumbnail:before {
 				display: none;
@@ -997,6 +1005,12 @@
 		left: 0;
 	}
 
+		body.fullscreen #viewer {
+			width: calc(100% - 4em);
+			background-color: black;
+			z-index: 2;
+		}
+
 		#viewer .inner {
 			-moz-pointer-events: none;
 			-webkit-pointer-events: none;
@@ -1031,19 +1045,18 @@
 				height: 100%;
 			}
 
-			#viewer .inner .toggle {
+			#main .toggle {
 				-webkit-tap-highlight-color: transparent;
 				position: absolute;
 				top: 0;
 				width: 4em;
 				height: 4em;
-				background-image: url("images/close.svg");
+				background-image: url("images/close-alt.svg");
 				background-repeat: no-repeat;
 				background-size: 64px 64px;
 				cursor: pointer;
 				z-index: 1;
 				right: 0;
-				background-position: calc(100% - 0.75em) 0.75em;
 			}
 
 			#viewer .inner .nav-next,
@@ -1152,19 +1165,11 @@
 				opacity: 1;
 			}
 
-		body.fullscreen #viewer {
-			width: 100%;
-		}
-
-			body.fullscreen #viewer .inner .toggle {
-				background-image: url("images/open.svg");
-			}
-
-		body.is-loading-1 #viewer {
+		body.is-preload-1 #viewer {
 			opacity: 0;
 		}
 
-		body.is-loading-2 #viewer .slide {
+		body.is-preload-2 #viewer .slide {
 			opacity: 0;
 		}
 
@@ -1176,33 +1181,7 @@
 
 		}
 
-		@media screen and (max-width: 980px) {
-
-			#viewer {
-				width: 100%;
-			}
-
-				#viewer .inner .toggle {
-					-moz-transition: opacity 0.75s ease;
-					-webkit-transition: opacity 0.75s ease;
-					-ms-transition: opacity 0.75s ease;
-					transition: opacity 0.75s ease;
-					background-image: url("images/open.svg");
-					opacity: 0;
-					right: 0;
-				}
-
-				body.fullscreen #viewer .inner .toggle {
-					opacity: 1;
-				}
-
-		}
-
 		@media screen and (max-width: 736px) {
-
-			#viewer .inner .toggle {
-				background-size: 32px 32px;
-			}
 
 			#viewer .inner .nav-next,
 			#viewer .inner .nav-previous {
@@ -1210,48 +1189,56 @@
 				background-size: 32px 32px;
 			}
 
-			body.fullscreen #viewer .inner .toggle {
-				background-image: url("images/open-small.svg");
+			/* body.fullscreen #viewer .inner .toggle { */
+			body.fullscreen .toggle {
+				background-image: url("images/open-small-alt.svg") !important;
 			}
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 640px) {
 
-			#viewer {
-				-moz-transition: opacity 0.5s ease;
-				-webkit-transition: opacity 0.5s ease;
-				-ms-transition: opacity 0.5s ease;
-				transition: opacity 0.5s ease;
-				-moz-transition-delay: 0s;
-				-webkit-transition-delay: 0s;
-				-ms-transition-delay: 0s;
-				transition-delay: 0s;
-				opacity: 0;
+			body.fullscreen #main {
+				overflow: hidden;
 			}
 
-				#viewer .inner .toggle {
-					background-image: url("images/close-small.svg") !important;
-					background-size: 32px 32px;
-				}
+			body.fullscreen #viewer {
+				width: 100% !important;
+				top: 4em !important;
+				height: calc(100% - 4em);
+			}
+
+			#main .toggle {
+				display: none;
+			}
+
+			body.fullscreen #main .toggle {
+				display: block !important;
+				background-image: url("images/open-alt.svg") !important;
+				width: 100% !important;
+			}
+
+			#viewer {
+				-moz-transition: background-color 0.5s ease, opacity 0.5s ease, height 0.5s ease;
+				-webkit-transition: background-color 0.5s ease, opacity 0.5s ease, height 0.5s ease;
+				-ms-transition: background-color 0.5s ease, opacity 0.5s ease, height 0.5s ease;
+				transition: background-color 0.5s ease, opacity 0.5s ease;
+			}
 
 				body.fullscreen #viewer {
-					-moz-transition-delay: 0.5s;
-					-webkit-transition-delay: 0.5s;
-					-ms-transition-delay: 0.5s;
-					transition-delay: 0.5s;
 					opacity: 1;
 				}
-
 		}
 
 /* Dark theme */
 /* TODO: fix @media screen, to not darken print */
 @media (prefers-color-scheme: dark) {
   html, body, body * {
-    background-color: #181a1b !important;
     border-color: #595959 !important;
     color: #e8e6e3 !important;
+  }
+  #main {
+	  background-color: #181a1b !important;
   }
   html, body, input, textarea, select, button {
       border-color: #575757!important;

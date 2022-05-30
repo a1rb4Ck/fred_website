@@ -9,6 +9,7 @@ _site/
 Gemfile.lock
 *.gem
 .bundle/
+vendor/
 
 ### macOS ###
 # General
