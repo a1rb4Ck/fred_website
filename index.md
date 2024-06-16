@@ -22,6 +22,6 @@ title: Fred Nagorny
         {% else %}
             <h2>{{ photo.title }}</h2>
         {% endif %}
-		<p>{{ photo.caption }}</p>
+		<p>{{ photo.caption | markdownify }}</p>
 	</article>
 {% endfor %}</section>

@@ -130,7 +130,7 @@ var main = (function($) { var _ = {
 
 		// Space: Next.
 			32: function() {
-				_.next();
+			_.toggle();
 			},
 
 		// Right Arrow: Next.
@@ -599,8 +599,8 @@ var main = (function($) { var _ = {
 									    if((typeof YT !== "undefined") && YT && YT.Player){
 									        player = new YT.Player('video' + newSlide.videoId, {
 								            	videoId: newSlide.videoId,
-								            	height: '320',
-											    width: '640',
+								            	height: '2160',
+											    width: '3840',
 									            events: {
 									              'onReady': onPlayerReady,
 									              'onStateChange': onPlayerStateChange
@@ -640,7 +640,10 @@ var main = (function($) { var _ = {
 							            	_.next();
 							                event.target.destroy();
 							            }
-			        				}
+										event.target.setPlaybackQuality('highres');
+										console.log(event.target.getPlaybackQuality());
+										console.log(event.target.getVideoData().video_quality_features);
+									}
 			        				// youtube();
 
 										// Set background image.

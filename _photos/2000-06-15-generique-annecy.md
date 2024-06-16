@@ -6,7 +6,9 @@ titleUrl: https://www.youtube.com/watch?v=pSCxsU8HsAY
 videoId: pSCxsU8HsAY
 image: https://img.youtube.com/vi/pSCxsU8HsAY/hqdefault.jpg
 
-caption: "Réalisé en 2000 pour le Festival d'Annecy afin d'animer son logo et d'être diffusé en ouverture des séances de projection. Une illustration de deux siècles d'animation avec les techniques de chaque époques : zootrope, table d'animation, banc titre, ordinateur."
+caption: "Réalisé en 2000 pour le Festival d'Annecy afin d'animer son logo et d'être diffusé en ouverture des séances de projection. Une illustration de deux siècles d'animation avec les techniques de chaque époques : zootrope, table d'animation, banc titre, ordinateur.
+Réalisation: [Frédéric Nagorny](https://histoire3d.siggraph.org/index.php/Fr%C3%A9d%C3%A9ric_Nagorny). Direction Technique: [Raymond Perrin](https://histoire3d.siggraph.org/index.php/Raymond_Perrin). Illustration sonore: [Alain Schneider](https://www.alain-schneider.com/).
+Production: INA et Gobelins."
 ---
 
 <!-- iframe: https://www.youtube.com/embed/pSCxsU8HsAY?&start=0&autoplay=1&origin=https://frednagorny.com&controls=0&disablekb=1&fs=1&rel=1&showinfo=0&autohide=1&iv_load_policy=3&loop=1&modestbranding=1&rel=0 -->
