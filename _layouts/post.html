@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<hr>
+{% if page.titleUrl %}
+  <a href= "{{ page.titleUrl }}">
+    <h1>{{ page.title }}</h1>
+  </a>
+{% else %}
+  <h1>{{ page.title }}</h1>
+{% endif %}
+
+{% if page.image %}
+  {% if page.videoId %}
+    <!-- <a data-videoId="{{ post.videoId }}" data-thumbnail="{{ post.image }}" data-position="center">
+        <img src="{{ post.image }}" alt="Video thumbnail" />
+    </a> -->
+    <!-- https://github.com/eduardoboucas/buildtimes/blob/master/_includes/helpers/video-embed.html -->
+    {% assign width = page.videoWidth | times: 1.0 %}
+    {% assign height = page.videoHeight | times: 1.0 %}
+    {% assign paddingBottom = height | divided_by: width | times: 100 %}
+
+    <div class="embed-container">
+      <div class="video-holder" style="padding-bottom: {{ paddingBottom }}%;">
+        <iframe
+          src="https://www.youtube.com/embed/{{ page.videoId }}?controls=1&modestbranding=1"
+          width="{{ width }}"
+          height="{{ height }}"
+          frameborder="0"
+          enablejsapi="1"
+          allowfullscreen="true"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope;">
+        </iframe>
+      </div>
+    </div>
+  {% else %}
+    <div class="thumbnail-container"></div>
+      <img src="{{ page.image }}" alt="Thumbnail" />
+    </div>
+    <div class="caption">{{ page.caption | markdownify }}</div>
+  {% endif %}
+{% endif %}
+
+<article>
+  {{ content }}
+</article>
+{% if site.hide_post_date != true %}
+  {% include post-date.html %}
+{% endif %}
+{% if site.hide_post_share != true %}
+  {% include social-sharing.html %}
+{% endif %}
+{% if site.hide_related_posts != true %}
+  {% include related-posts.html %}
+{% endif %}
+{% if site.data.settings.disqus.comments %}
+  {% include disqus.html %}
+{% endif %}

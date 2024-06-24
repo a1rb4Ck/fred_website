@@ -4,14 +4,15 @@ title: Fred Nagorny
 ---
 
 <!-- Thumbnail -->
-<section id="thumbnails">{% for photo in site.photos reversed %}
+<section id="thumbnails">
+{% for photo in site.photos reversed %}
 	<article>
         {% if photo.videoId %}
-            <a class="thumbnail" data-videoId="{{ photo.videoId }}" data-thumbnail="{{ photo.image }}" data-position="left center">
+            <a class="thumbnail" data-videoId="{{ photo.videoId }}" data-thumbnail="{{ photo.image }}" data-position="center">
                 <img src="{{ photo.image }}" alt="Video thumbnail" />
             </a>
         {% else %}
-            <a class="thumbnail" href="{{ photo.image }}" data-position="left center">
+            <a class="thumbnail" href="{{ photo.image }}" data-position="center">
                 <img src="{{ photo.thumbnail }}" alt="Thumbnail" />
             </a>
         {% endif %}
@@ -24,4 +25,5 @@ title: Fred Nagorny
         {% endif %}
 		<p>{{ photo.caption | markdownify }}</p>
 	</article>
-{% endfor %}</section>
+{% endfor %}
+</section>

@@ -4,7 +4,7 @@ Animation movie director and professor.
 
 ![Le Pantin - Fred Nagorny - 1990](assets/images/thumbs/le_pantin_0004661.jpg "Le Pantin - Fred Nagorny - 1990")
 
-Images and YouTube videos are from Fred Nagorny works.
+Images and YouTube videos on the main page are from Fred Nagorny works.
 
 ## How to Use
 

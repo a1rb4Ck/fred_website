@@ -1,15 +1,16 @@
 # Site settings
-timezone:  Europe/Paris
+timezone: Europe/Paris
 encoding: UTF-8
 lang: en-EN
 locale: en-EN
 branch: gh-pages
 future: true
 
+# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title: Fred Nagorny
 title_separator : "-"
 tagline: "animation shorts and making of"
-description: "An animation professor portfolio."
+description: "Fred Nagorny's animation professor portfolio and news."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.frednagorny.fr" # the base hostname & protocol for your site
 author: Fred Nagorny
@@ -30,11 +31,26 @@ linkedin_url:
 pinterest_url:
 slack_url:
 twitter_url:
-youtube_url: "https://www.youtube.com/channel/UCXQk9hrbllT5By2MwLcuSQA"
+youtube_url: "https://www.youtube.com/@frednagorny"
+
+# Jekyll-paginate-v2 configuration
+# pagination:
+#   enabled: true
+#   per_page: 5
+#   permalink: '/page/:num/'
+#   title: ':title - page :num of :max'
+#   limit: 0
+#   sort_field: 'date'
+#   sort_reverse: true
+
+# jekyll-paginate configuration
+paginate: 10
+paginate_path: "/blog/page:num/"
 
 # Conversion
 markdown: kramdown
 highlighter: rouge
+permalink: /:title
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
@@ -57,13 +73,15 @@ sass:
 
 # Plugins (previously gems:)
 plugins:
-  # - jekyll-paginate
+  - jekyll-paginate
   - jekyll-sitemap
   # - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
   # - jekyll-redirect-from
   - jekyll-seo-tag
+
+hide_post_share: true
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -86,7 +104,7 @@ compress_html:
 repository: a1rb4ck/fred_website
 logo: "/assets/images/logo.jpg"
 social:
-  links: "https://www.youtube.com/channel/UCXQk9hrbllT5By2MwLcuSQA"
+  links: "https://www.youtube.com/@frednagorny"
 defaults:
   - scope:
       path: ""

@@ -1,13 +1,13 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "lens_jekyll_theme"
+  spec.name          = "lens_jekyll_theme x lagrange"
   spec.version       = "1.3"
-  spec.authors       = ["Andrew Banchich", "Pierre Nagorny"]
-  spec.email         = ["andrewbanchich@gmail.com"]
+  spec.authors       = ["Andrew Banchich", "Paul Le", "Pierre Nagorny"]
+  spec.email         = ["andrewbanchich@gmail.com", "hello@paulle.ca"]
 
   spec.summary       = %q{A Jekyll version of the "Lens" theme by HTML5 UP.}
-  spec.homepage      = "https://gitlab.com/andrewbanchich/lens-jekyll-theme"
+  spec.homepage      = "https://gitlab.com/andrewbanchich/lens-jekyll-theme, https://github.com/LeNPaul/Lagrange"
   spec.license       = "MIT"
   spec.metadata["plugin_type"] = "theme"
 
@@ -16,7 +16,9 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "jekyll", "~> 4.0", "< 5.0"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"
+  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.6"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.16"
+  spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
   spec.add_runtime_dependency "jekyll-include-cache", "~> 0.2.1"
 
   spec.add_development_dependency "bundler", "~> 2.3.11"

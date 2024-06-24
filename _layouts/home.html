@@ -9,11 +9,16 @@ layout: compress
 	Originaly ported to Jekyll by andrewbanchich https://github.com/andrewbanchich/lens-jekyll-theme 2016-2021
 	Finally edited to supported a mix of images + Youtube integration by Pierre Nagorny 2019-2022
 -->
-<html>
+<html lang="{{ page.lang | default:site.lang | default:'en' | split:'-' | first | split:'_' | first }}">
 
 {% include head.html %}
+<link rel="stylesheet" href="{{ "/assets/css/home.css" | relative_url }}" />
 
     <body class="is-preload-0 is-preload-1 is-preload-2">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLDLNFSH"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
 
         <!-- Main -->
         <div id="main">

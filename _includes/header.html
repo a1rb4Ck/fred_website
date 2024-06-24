@@ -2,22 +2,29 @@
 <header id="header">
 	<h1>{{ site.title }}</h1>
 	<p>{{ site.description }}</p>
-	<ul class="icons">
+	<ul class="icons" style="display: flex">
 		<li>
-			<a href="https://histoire3d.siggraph.org/index.php/Fr%C3%A9d%C3%A9ric_Nagorny" class="icon" target="_blank" title="Wiki histoire3D SIGGRAPH" aria="Wiki histoire3D SIGGRAPH">
+			<a href="{{ site.url }}/blog" class="icon fal fa-newspaper" title="Blog" aria="Fred Nagornys's blog">
+				<span>Blog</span>
+			</a>
+		</li>
+		<li style="flex-grow: 1;">
+		</li>
+		<li>
+			<a href="https://histoire3d.siggraph.org/index.php/Fr%C3%A9d%C3%A9ric_Nagorny" class="icon" target="_blank" title="Wiki Hist3D SIGGRAPH" aria="Wiki Hist3D SIGGRAPH">
 				<img style="height: 2em; width: 2em; vertical-align: -0.3em; filter: gray; -webkit-filter: grayscale(0.8); filter: grayscale(0.8); border: 1px solid #ddd; border-radius: 4px;" src="https://histoire3d.siggraph.org/favicon.ico">
 				<span class="label">SIGGRAPH Hist3D</span>
 			</a>
 		</li>
 		{% if site.youtube_url %}
 			<li>
-				<a href="{{ site.youtube_url }}" class="icon fa-brands fa-youtube" target="_blank" title="Fred Nagorny on YouTube" aria="Fred Nagorny on YouTube">
+				<a href="{{ site.youtube_url }}" class="icon fal fa-brands fa-youtube" target="_blank" title="Fred Nagorny on YouTube" aria="Fred Nagorny on YouTube">
 					<span class="label">YouTube</span>
 				</a>
 			</li>
 		{% endif %}
 		{% if site.twitter_url %}
-			<li>
+			<li style="flex-grow: 1;">
 				<a href="{{ site.twitter_url }}" class="icon fa-brands fa-twitter" target="_blank">
 					<span class="label">Twitter</span>
 				</a>
