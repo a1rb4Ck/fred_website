@@ -119,3 +119,26 @@
   font-family: $sans-serif-font-family;
   font-size:0.8rem;
 }
+
+/*! div style */
+.image-gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(240px, 1fr));
+  justify-content: center;
+}
+
+.image-gallery .box {
+  margin: 0px 3px;
+}
+
+.image-gallery .img-gallery {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+}

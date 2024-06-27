@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Audios du colloque Cinéma d'Animation en France - INHA Paris 2013
+title: Histoires des formations en cinéma d’animation - INHA Paris 2013
 author: Fred
 date: 2013-11-20
 categories: talk
@@ -8,11 +8,9 @@ tags: [animation,2d,3d,talk,training,Gobelins,history,audio,INHA]
 image: assets/images/fulls/2013-10-30_INHA_archive.org.jpg
 ---
 
-[Sophie Gallo](dma-cinemadanimation-descartes.blogspot.co), enseignante au [DMA cinéma d’animation du lycée Descartes](http://dma-cinemadanimation-descartes.blogspot.com/) de Cournon a réalisé la captation audio du colloque.  
+[Sophie Gallo](dma-cinemadanimation-descartes.blogspot.co), enseignante au [DMA cinéma d’animation du lycée Descartes](http://dma-cinemadanimation-descartes.blogspot.com/) de Cournon a réalisé la captation audio du colloque [INHA 2013]((https://cinemasdanimations.wordpress.com/)).  
 
-L'ensemble des interventations enregistrées et rendues publiques sont [disponible en ligne](https://cinemasdanimations.wordpress.com/2013/11/24/captation-audio/), et sur [archive.org](https://archive.org/details/JeudiMatinIntroBarresNagorny) uplodées par [Marie Pruvost](https://www.estca.univ-paris8.fr/marie-pruvost-delaspre/).  
-
-L'intervention de Fred Nagorny _Histoires des formations en cinéma d’animation_ peut être écoutée ci-dessous :  
+L'intervention de Fred Nagorny _Histoires des formations en cinéma d’animation_ peut être écoutée ci-dessous, avec la transcription.  
 
 <!-- <iframe src="https://archive.org/embed/JeudiMatinIntroBarresNagorny?start=3196&amp;playlist=1&amp;autoplay=0" width="560" height="60" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe> -->
 
@@ -21,11 +19,13 @@ L'intervention de Fred Nagorny _Histoires des formations en cinéma d’animatio
   Your browser does not support the audio element.
 </audio>
 
+L'ensemble des interventations enregistrées et rendues publiques sont [disponible en ligne](https://cinemasdanimations.wordpress.com/2013/11/24/captation-audio/), sur [archive.org](https://archive.org/details/JeudiMatinIntroBarresNagorny) uplodées par [Marie Pruvost](https://www.estca.univ-paris8.fr/marie-pruvost-delaspre/).  
+
 Site web du colloque : [cinemasdanimations.wordpress.com](https://cinemasdanimations.wordpress.com/)  
 
 #### Transcription de l'intervention : Histoires des formations en cinéma d’animation
 
-Médiateur: _Donc j'aimerais passer maintenant la parole à Frédéric Nagorny des Gobelins._  
+Médiateur: _Donc j'aimerais passer maintenant la parole à Frédéric Nagorny des [Gobelins](https://www.gobelins.fr/)._  
 
 Fred Nagorny: _Bonjour, je vais vous parler des Gobelins, et probablement une forme de formation un petit peu étendue puisque j'ai eu l'occasion d'intervenir à l'université de Marne-la-Vallée également et aussi dans des formations pour des sociétés privées, ces formations sont liées à l'image de synthèse et à l'animation. Mon propos concerne l'évolution de la formation et particulièrement avec des exemples de ce qui concerne les Gobelins. L'évolution des formations de manière générale, je pense, suit l'évolution du milieu professionnel._  
 
@@ -35,7 +35,7 @@ _Justement, un des problèmes de la formation consiste à savoir ce qu'on va gar
 
 _Au niveau des grands titres dans les années 30, des caméras multiplanes pour donner une profondeur, qui était analogique à l'époque et qui fonctionnaient remarquablement. Il y a eu également des développements sur une forme de numérisation de la trace gouache, par exemple. Alors la gouache, non, mais la trace, oui. Avec les développements des photocopieurs, et à nouveau, c'était des fonctionnements analogiques._  
 
-_L'utilisation de la trace en photocopieur (Xeroxing), c'était développé dans les années 50-55. Le film révélateur de ce point de vue là, ce qui concerne le long métrage, grand public on va dire, c'est "[Les 101 Dalmatiens](https://www.smithsonianmag.com/innovation/how-one-hundred-and-one-dalmatians-saved-disney-180977869/)", qui est un petit court-métrage puis long-métrage expérimental. On voit bien que le film a été choisi pour ça, parce qu'on avait un photocopieur et qu'on pouvait multiplier des chiennes à la photocopie._  
+_L'utilisation de la trace en photocopieur ([Xeroxing](https://en.wikipedia.org/wiki/Xerography)), c'était développé dans les années 50-55. Le film révélateur de ce point de vue là, ce qui concerne le long métrage, grand public on va dire, c'est "[Les 101 Dalmatiens](https://www.smithsonianmag.com/innovation/how-one-hundred-and-one-dalmatians-saved-disney-180977869/)", qui est un petit court-métrage puis long-métrage expérimental. On voit bien que le film a été choisi pour ça, parce qu'on avait un photocopieur et qu'on pouvait multiplier des chiennes à la photocopie._  
 
 _Mais malgré tout, après ça, c'est la photocopie qui s'est imposée et il n'y a pas eu de retour à la trace gouache, à la trace manuelle couleur. Donc ça veut dire que dès qu'un outil permet de gagner du temps, il s'impose et on ne revient pas en arrière ; dans le secteur industriel, bien sûr. Là encore une fois, dans le secteur d'auteur, c'est complètement différent. On est libre et on peut mener sa recherche comme on l'entend et c'est un secteur évidemment passionnant._  
 
@@ -80,12 +80,12 @@ _Et puis, donc c'est ce qu'on trouve beaucoup ici. Ponctuellement, il y a eu un 
 
 _Il est évident qu'à l'étranger, à partir du moment où il y a de gros moyens, ou pareil, je pense aux États-Unis évidemment, mais pas seulement. À Londres, les grosses boîtes de post-production ont besoin de talent à un niveau élevé en animation. Donc effectivement, les écoles doivent être capables de former des gens avec un niveau élevé en ce qui concerne ce savoir-faire. Certains d'entre eux partent aux États-Unis, d'autres partent, s'exportent effectivement dans les Hapsas, ça peut être à Londres._
 
-_Et actuellement, il y a une tendance chez les étudiants à apprendre le japonais. Il y a une grosse tendance qui existe à apprendre le japonais pour aller travailler au Japon sur des séries japonaises, qu'elles soient 2D, d'ailleurs, ou 3D, ou mélangées, effectivement, mais les techniques sont mélangées. Donc on a ces trois points d'appui, en gros, l'Europe avec la pré-production, le Japon parce qu'il y a un attrait au niveau de la créativité qui est très tourné vers un public adulte, en fait, vers une éthique un peu adulte, et puis l'épée anglo-saxon qui a une tradition de l'animation plutôt orientée vers le cartoon, même quand il s'agit de films avec des éléments un peu réalistes, on est quand même, on est franchement dominante cartoon._
+_Et actuellement, il y a une tendance chez les étudiants à apprendre le japonais. Il y a une grosse tendance qui existe à apprendre le japonais pour aller travailler au Japon sur des séries japonaises, qu'elles soient 2D, d'ailleurs, ou 3D, ou mélangées, effectivement, mais les techniques sont mélangées. Donc on a ces trois points d'appui, en gros, l'Europe avec la pré-production, le Japon parce qu'il y a un attrait au niveau de la créativité qui est très tourné vers un public adulte, en fait, vers une éthique un peu adulte, et puis l'épée anglo-saxon qui a une tradition de l'animation plutôt orientée vers le cartoon, même quand il s'agit de films avec des éléments un peu réalistes, on est quand même franchement dominante cartoon._
 
 Alors oui, c'est un bon pour le Japon, c'était un peu étonnant, j'en dis deux mots: en fait, à la fin des années 80 et 90, il y a eu en France des achats massifs de séries-télé japonaises, en grosse quantité, il y a eu des séries sur un tas de choses, des séries sur le basket, sur le football, sur les. etc.. Et donc, il y a toute une génération d'enfants qui ont été élevés avec ça, à la télé._
-_Alors c'est très étonnant, parce qu'au Gobelin, par exemple, dans les dossiers d'entrant, anciennement il y avait des dossiers d'entrant qui étaient très orientés "Disney", parce qu'ils avaient été joués avec Disney, donc ils faisaient des dossiers très semi-réalistes, cartoon, quoi, on va dire, un peu à la Disney, et puis petit à petit, on a eu des dossiers orientés "mangas". C'est étonnant._  
+_Alors c'est très étonnant, parce qu'aux Gobelins, par exemple, dans les dossiers d'entrant, anciennement il y avait des dossiers d'entrant qui étaient très orientés "Disney", parce qu'ils avaient été joués avec Disney, donc ils faisaient des dossiers très semi-réalistes, cartoon, quoi, on va dire, un peu à la Disney, et puis petit à petit, on a eu des dossiers orientés "mangas". C'est étonnant._  
 
-_Actuellement, étonnamment, c'est peut-être lié au succès des films qui ont été produits en France dernièrement, et peut-être aussi au succès de l'école, on a des dossiers "Gobelins"._  
+_Actuellement, étonnamment, c'est peut-être lié au succès des films qui ont été produits en France dernièrement, et peut-être aussi au succès de l'école, on a des dossiers "[Gobelins](https://www.gobelins.fr/)" !_  
 
 _C'est assez curieux, parce que le web permet de s'échanger sur les blogs, des notions graphiques,
 et on se retrouve effectivement avec une sorte de style qui existe, alors qui est très varié, qui est très graphique, qui est très très original par rapport au style cartoon traditionnel, très curieux._  
@@ -117,20 +117,25 @@ _C'était assez curieux, il était prêt à être un producteur, il ne dessine p
 
 _Donc lui, il cherchait éventuellement à ouvrir une école, là-bas, à développer des formations, etc., avant qu'il ne vienne voir un peu comment on fait ici. En fait, sa préoccupation, c'est qu'il est très surpris que des étudiants, oui, que l'animation japonaise ait un tel succès, une telle notoriété dans le monde._  
 
-_Il constate que l'animation japonaise a une notoriété dans le monde, c'est-à-dire que c'est vraiment en bonne presse, mais il constate que personne ne cherche à embaucher, à débaucher des animateurs japonais. Alors, il est un peu surpris de ça, et donc il voulait comprendre comment on fait ici pour fabriquer des étudiants qui sont embauchés à l'étranger et qui sont très brisés à l'étranger._  
+_Il constate que l'animation japonaise a une notoriété dans le monde, c'est-à-dire que c'est vraiment en bonne presse, mais il constate que personne ne cherche à embaucher, à débaucher des animateurs japonais. Alors, il est un peu surpris de ça, et donc il voulait comprendre comment on fait ici pour fabriquer des étudiants qui sont embauchés à l'étranger et qui sont très prisés à l'étranger._  
 
-_C'est-à-dire que, vous voyez, c'est complètement paradoxal, c'est une situation absolument incroyable où on est en train de dire qu'on est très fort pour fabriquer des bons professionnels qu'on exporte._  
+_C'est-à-dire que, vous voyez, c'est complètement paradoxal, c'est une situation absolument incroyable où on est en train de dire qu'on est très fort pour fabriquer des bons professionnels, qu'on exporte !_  
 
 _Vous voyez, on pouvait se dire, bon, on va dans le domaine du cinéma, on essaie d'exporter notre cinéma,
 parce que c'est le cinéma qui fait de l'argent. Nous, on exporte nos étudiants et nos professionnels,
 vous voyez, c'est assez extraordinaire._  
 
-_Et donc, par rapport à ça, en fait, j'espère qu'il a un peu compris la manière dont on travaille. Évidemment, on a essayé de développer également une école d'été il y a 6-7 ans, avec des sortes de master-class sur 10 jours qui ont assez bien marché au niveau international._
+_Et donc, par rapport à ça, en fait, j'espère qu'il a un peu compris la manière dont on travaille. Évidemment, on a essayé de développer également une [école d'été]() il y a 6-7 ans, avec des sortes de master-class sur 10 jours qui ont assez bien marché au niveau international._
 
 _Effectivement, il y a un rayonnement de l'école qui fait que, avec ces éléments, les étudiants sont relativement prisés, et la qualité des films est assez bonne._
 
 _On peut peut-être mettre quelques vidéos. Donc, j'ai amené quelques éléments aux vidéos pour prendre des points de comparaison, si vous voulez, sur les évolutions de formation._
 
 _présentation des videos_
+
+_Il y a un désir d'animation adulte. C'est visible dans la model-sheet. On s'éloigne de la représentation de l'enfant et on va vers l'adulte. En faite, l'animation permet à des situations d'adulte d'être dédramatisés par la poésie de l'animation._
+Il y a un glissement aussi vers un public plus adulte. On peut le voir dans l'évolution du character design.
+un public enfantin, mais qui s'intéresse à la tranche du dessus, aux collégiens.
+_L'identité de chaque école d'animation s'est marquée. Et l'enseignement est différent dans chaque école._
 
 Fred Nagorny, Novembre 2011.
