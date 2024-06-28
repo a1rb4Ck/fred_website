@@ -4,7 +4,7 @@ title: Workshop Café Salé CFSL 2012
 author: Fred
 date: 2012-10-13
 categories: talk
-tags: [animation,2d,talk,teaching,workshop,Fred]
+tags: [animation,2d,talk,teaching,masterclass]
 image: assets/images/fulls/cfsl2012_250447_427798727278226_1490261792_n.jpg
 ---
 
@@ -20,4 +20,4 @@ Dans le cadre du Workshop [Café Salé](https://web.archive.org/web/201210252320
 </div>
 
 Photographies &copy; Workshop CSL 2012  
-Photographes : [Iloe Photography](iloe.pro) [@iloe_365](https://www.instagram.com/iloe_365/), [Carlos Pardo](pardo-photography.com) [@made_artworks](https://www.instagram.com/made_artworks)
+Photographes : [Iloe Photography](http://iloe.pro) [@iloe_365](https://www.instagram.com/iloe_365/), [Carlos Pardo](https://pardo-photography.com) [@made_artworks](https://www.instagram.com/made_artworks)

@@ -4,7 +4,7 @@ title: 3rd Gobelins Summer School - Character Animation
 author: Fred
 date: 2008-06-30
 categories: talk
-tags: [animation,2d,talk,teaching,masterclass,Gobelins,Fred]
+tags: [animation,2d,3d,talk,teaching,masterclass,Gobelins]
 image: assets/images/fulls/2007_summer_Gobelins.jpg
 ---
 

@@ -4,7 +4,7 @@ title: ENSA Paris-Val de Seine
 author: Fred
 date: 2018-04-06
 categories: talk
-tags: [animation,2d,3d,architecture,talk,direction]
+tags: [animation,2d,3d,architecture,talk]
 image: assets/images/fulls/ENSAPVL_banner_accueil_logo.jpg
 ---
 

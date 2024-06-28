@@ -4,7 +4,7 @@ title: Colloque Cinéma d'Animation en France - INHA Paris 2013
 author: Fred
 date: 2013-10-30
 categories: talk
-tags: [animation,2d,3d,talk,training,history,INHA]
+tags: [animation,2d,3d,talk,training,Gobelins,history]
 image: assets/images/fulls/2013-10-30_INHA_affiche-animation.webp
 ---
 
@@ -14,7 +14,7 @@ _[Histoires des formations en cinéma d’animation]({{site.url}}/2013-11-20-INH
 
 [Marie Paccou](http://mariepaccou.com/), réalisatrice et enseignante ([EMCA](https://www.emca-angouleme.fr/), [La Maison aux Mille Images](https://www.facebook.com/LaMaisonAuxMilleImages/)) en cinéma d'animation, a partagé ses [notes illustrées du colloque sur son blog](http://pleinlesgodasses.blogspot.com/2013/11/colloque-inha-prise-de-notes.html).  
 
-Avant cet intervention, [Cécile Welker](https://hist3d.fr/presentation/cecile-welker/) présentera le travail d'archivage et de cataloguage [Hist3D](https://hist3d.fr/) du [SpatialMedia](https://spatialmedia.ensadlab.fr/category/hist3d/) [ENSADLab](https://www.ensadlab.fr/) ([Art Décoratifs ENSAD](https://www.ensad.fr)) sur les pionniers de l'image de synthèse 3D en France.
+Avant cette intervention, [Cécile Welker](https://hist3d.fr/presentation/cecile-welker/) présentera le travail d'archivage et de cataloguage [Hist3D](https://hist3d.fr/) du [SpatialMedia](https://spatialmedia.ensadlab.fr/category/hist3d/) [ENSADLab](https://www.ensadlab.fr/) ([Art Décoratifs ENSAD](https://www.ensad.fr)) sur les pionniers de l'image de synthèse 3D en France.
 Notamment les travaux de l'[INA Groupe de Recherche Technologique](https://histoire3d.siggraph.org/index.php/INA#Groupe_de_recherche_technologique) financé par le [Plan Recherche Image](https://histoire3d.siggraph.org/index.php/Plan_Recherche_Image) qui a permis le développement du [logiciel Explore (TDI)](https://hist3d.fr/early-days-in-france/jean-charles-hourcade-ina-tdi-explore/), ancêtre de [Maya](https://en.wikipedia.org/wiki/Autodesk_Maya).
 En 1990, [Fred Nagorny](https://histoire3d.siggraph.org/index.php/Fr%C3%A9d%C3%A9ric_Nagorny) et [Raymond Perrin](https://histoire3d.siggraph.org/index.php/Raymond_Perrin) développe au [studio Relief](https://histoire3d.siggraph.org/index.php/Relief) le module d'animation de personnage Character pour [IKO-light](https://histoire3d.siggraph.org/index.php/IKOlight) (puis [Softimage](https://histoire3d.siggraph.org/index.php/Softimage)) qui permet l'animation par images clés.
 

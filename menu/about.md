@@ -4,7 +4,7 @@ title: About the author
 author: "Fred Nagorny"
 date: 2024-06-21
 categories: about
-tags: [author,fred,animation,professor,teaching,gobelins,school,conference]
+tags: [animation,2d,3d,teaching,gobelins,talk,Relief]
 image: ../assets/images/fulls/fred_summer_school_2012.jpg
 thumbnail: ../assets/images/thumbs/fred_summer_school_2012.jpg
 caption: "Fred Nagorny masterclass at the 2012 Gobelins summer school. Photo from [lydiamikkers.blogspot.com](http://lydiamikkers.blogspot.com/2012/09/gobelins-summer-school-fred-nagorny_2.html)."

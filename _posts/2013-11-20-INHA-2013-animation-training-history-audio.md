@@ -4,7 +4,7 @@ title: Histoires des formations en cinéma d’animation - INHA Paris 2013
 author: Fred
 date: 2013-11-20
 categories: talk
-tags: [animation,2d,3d,talk,training,Gobelins,history,audio,INHA]
+tags: [animation,2d,3d,talk,training,Gobelins,history,audio]
 image: assets/images/fulls/2013-10-30_INHA_archive.org.jpg
 ---
 
@@ -23,7 +23,7 @@ L'ensemble des interventations enregistrées et rendues publiques sont [disponib
 
 Site web du colloque : [cinemasdanimations.wordpress.com](https://cinemasdanimations.wordpress.com/)  
 
-#### Transcription de l'intervention : Histoires des formations en cinéma d’animation
+## Transcription de l'intervention : Histoires des formations en cinéma d’animation
 
 Médiateur: _Donc j'aimerais passer maintenant la parole à Frédéric Nagorny des [Gobelins](https://www.gobelins.fr/)._  
 

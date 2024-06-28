@@ -4,7 +4,7 @@ title: 2nd Gobelins Summer School - Character Animation
 author: Fred
 date: 2007-07-02
 categories: talk
-tags: [animation,2d,talk,teaching,masterclass,Gobelins,Fred]
+tags: [animation,2d,talk,teaching,masterclass,Gobelins]
 image: assets/images/fulls/2007_summer_Gobelins.jpg
 ---
 

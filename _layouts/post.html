@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<hr>
+<hr />
 {% if page.titleUrl %}
   <a href= "{{ page.titleUrl }}">
     <h1>{{ page.title }}</h1>
@@ -35,7 +35,7 @@ layout: default
       </div>
     </div>
   {% else %}
-    <div class="thumbnail-container"></div>
+    <div class="thumbnail-container">
       <img src="{{ page.image }}" alt="Thumbnail" />
     </div>
     <div class="caption">{{ page.caption | markdownify }}</div>
@@ -45,9 +45,20 @@ layout: default
 <article>
   {{ content }}
 </article>
+
 {% if site.hide_post_date != true %}
   {% include post-date.html %}
 {% endif %}
+
+<span class="tags-cloud">
+  Tags:
+  {% for tag in page.tags %}
+    <a href="{{ site.url }}/blog/tags#{{ tag }}" class="tag">{{ tag }}</a>
+  {% endfor %}
+</span>
+
+<hr />
+
 {% if site.hide_post_share != true %}
   {% include social-sharing.html %}
 {% endif %}

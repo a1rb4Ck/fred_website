@@ -4,7 +4,7 @@ title: Architecture d'un Dessin Animé - ENSA Paris La Villette
 author: Fred
 date: 2008-05-13
 categories: talk
-tags: [animation,2d,3d,architecture,talk,direction]
+tags: [animation,2d,3d,architecture,talk]
 image: assets/images/fulls/logo-ensaplv.png
 ---
 

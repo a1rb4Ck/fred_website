@@ -1,1 +1,0 @@
-Professeur à Gobelins, l’école de l’image depuis 1991, il enseigne aussi à l’Université de Marne la Vallée. Fred s’attache à transmettre les techniques de l’animation depuis l’étude du mouvement jusqu’à l’organisation de la production.

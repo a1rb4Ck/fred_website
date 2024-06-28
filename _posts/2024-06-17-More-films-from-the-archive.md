@@ -4,7 +4,7 @@ title: More films from the archive
 author: Fred
 date: 2024-06-17
 categories: journal
-tags: [animation,3d,short,films,Fred,Relief,archive]
+tags: [animation,3d,Relief,history]
 titleUrl: https://www.youtube.com/@frednagorny/videos
 videoId: wTEMvgUdH1U
 videoWidth: 560

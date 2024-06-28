@@ -4,7 +4,7 @@ title: Fred - Gobelins 2024 short
 author: Fred
 date: 2024-06-07
 categories: journal
-tags: [animation,2d,short,Gobelins,Fred]
+tags: [animation,2d,Gobelins]
 titleUrl: https://www.instagram.com/p/C7qvritKDKE/
 videoId: 0DLL-cM2fU8
 videoWidth: 560

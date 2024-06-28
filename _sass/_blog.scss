@@ -13,8 +13,6 @@
 }
 .post-margin-bottom {
   width: 100%;
-  -webkit-filter: drop-shadow(5px 5px 5px #cecece);
-  filter: drop-shadow(5px 5px 5px #cecece);
 }
 
 /*
@@ -23,9 +21,10 @@
 
 .thumbnail-container {
   max-width: 100%;
-  overflow: hidden;
+  // overflow: hidden;
   border-radius: 5px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .thumbnail-container img{
@@ -45,6 +44,9 @@
   height: 0;
   padding-bottom: 56.25%;
   overflow: hidden;
+  border-radius: 5px;
+  -webkit-filter: drop-shadow(5px 5px 5px #cecece);
+  filter: drop-shadow(5px 5px 5px #cecece);
 }
 .video-holder iframe {
   position: absolute;

@@ -4,7 +4,7 @@ title: Pierre Hénon - Une histoire française de l’animation numérique
 author: Fred
 date: 2018-05-01
 categories: journal
-tags: [animation,2d,3d,histoire,Hist3D,ENSAD,book]
+tags: [animation,3d,history,Relief,book]
 titleUrl: https://hist3d.fr/livre/
 image: assets/images/fulls/pierre_hénon_couverture-500.jpg
 ---

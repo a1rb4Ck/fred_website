@@ -4,7 +4,7 @@ title: Wiki SIGGRAPH Hist3D
 author: Fred
 date: 2010-07-12
 categories: journal
-tags: [animation,2d,3d,history,Hist3D,ENSAD,Fred]
+tags: [animation,3d,history,Relief]
 titleUrl: https://histoire3d.siggraph.org/
 image: assets/images/fulls/200px-Logo_HIST3D.png
 ---

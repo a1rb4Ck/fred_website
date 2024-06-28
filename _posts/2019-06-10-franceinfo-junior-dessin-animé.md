@@ -4,7 +4,7 @@ title: franceinfo junior - Comment on fait un dessin animé ?
 author: Fred
 date: 2019-06-10
 categories: talk
-tags: [animation,2d,talk,history,audio,radio]
+tags: [animation,2d,talk,audio,radio]
 image: assets/images/fulls/2019_FIJ_ptits-journaliste_animation.jpg
 caption: Image © Estelle Faure / © GOBELINS, l’école de l’image
 ---
@@ -21,7 +21,7 @@ La [podcast de l'interview est disponible sur le site de franceinfo](https://www
 
 Production de l'émission : [Estelle Faure](https://www.francetvinfo.fr/redaction/estelle-faure/) [@estellefaure](https://x.com/estellefaure).  
 
-#### Transcription de l'interview de Fred
+## Transcription de l'interview
 
 Céline Asselot: _On pourrait dire que c'est un petit peu l'équivalent du Festival de Cannes, mais pour les dessins animés, le [Festival du Film d'animation](https://www.annecyfestival.com) ouvre ses portes aujourd'hui à Annecy. Et c'est l'occasion de découvrir les coulisses de ses films avec vous. Frédéric Nagorny, bonjour._
 

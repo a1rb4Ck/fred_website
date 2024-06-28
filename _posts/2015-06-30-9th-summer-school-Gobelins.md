@@ -4,7 +4,7 @@ title: 9th Gobelins Summer School - Character Animation
 author: Fred
 date: 2015-07-06
 categories: talk
-tags: [animation,2d,talk,teaching,masterclass,Gobelins,Fred]
+tags: [animation,2d,talk,teaching,masterclass,Gobelins]
 image: assets/images/fulls/2015_summer_Gobelins.jpg
 ---
 

@@ -4,7 +4,7 @@ title: Lascars - l'humour en 3D - Public Sénat
 author: Fred
 date: 2009-06-25
 categories: journal
-tags: [animation,3d,Gobelins,film,Fred]
+tags: [animation,2d,talk,Gobelins,tv]
 titleUrl: https://www.youtube.com/watch?v=wpROS3pGQ2Q&t=360
 videoId: wpROS3pGQ2Q
 videoWidth: 560
@@ -18,7 +18,7 @@ L'émission débute à 6 minutes 00. Durée : 20 minutes.
 
 _La sortie du film d'animation [Lascars](https://fr.wikipedia.org/wiki/Lascars_(film)) nous permet de revenir ce soir sur l'exceptionnelle réussite du cinéma d'animation français. Il n'est pas rare de voir de jeunes créateurs français partir travailler pour les grands studios d'Hollywood. Les productions françaises bénéficient aussi d'une reconnaissance internationale. Pierre Sled reçoit sur le plateau de Bouge la France [Albert Pereira-Lazaro](https://www.imdb.com/name/nm2076645/), réalisateur de Lascars et diplômé de l'[École des Gobelins](https://www.gobelins.fr/), et Frédéric Nagorny, Professeur d'animation de cette école qui est à ce jour la plus réputée en France._
 
-### Transcription de l'émission
+## Transcription de l'émission
 
 Pierre Sled: _Ils font sourire là-bas. Par leur périgrination de vacances, "[Lascars](https://fr.wikipedia.org/wiki/Lascars_(film))" est né de l'imagination et du talent de prodige de l'animation. Ils sont ce soir sur le plateau de Bouges-de-la-France. [Albert Pereira-Lazaro](https://www.imdb.com/name/nm2076645/), le réalisateur des "Lascars", et Frédéric Nagorny, il professe l'animation à l'[École des Gobelins](https://www.gobelins.fr/), à Paris. Bonsoir à tous les 2. Albert Pérala-Zaro est l'un des 2 réalisateurs. Vous êtes 2 là-dessus. Ça marche bien. On en est à plus de 250 000 entrées._  
 

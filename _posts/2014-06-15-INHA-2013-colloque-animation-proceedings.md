@@ -4,7 +4,7 @@ title: Actes du colloque Cinéma d'Animation en France - INHA Paris 2013
 author: Fred
 date: 2014-06-15
 categories: talk
-tags: [animation,2d,3d,talk,training,history,INHA]
+tags: [animation,2d,3d,talk,training,Gobelins,history,book]
 image: assets/images/fulls/2013-10-30_INHA_actes.jpg
 ---
 

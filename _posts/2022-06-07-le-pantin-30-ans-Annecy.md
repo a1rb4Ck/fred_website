@@ -4,7 +4,7 @@ title: Le Pantin au Festival d'Annecy 2022
 author: Fred
 date: 2022-06-04
 categories: journal
-tags: [animation,3d,short,Fred,Relief,Character]
+tags: [animation,3d,Relief,history]
 titleUrl: https://hist3d.fr/du-trace-au-pixel-annecy-2022/
 image: assets/images/fulls/Du_tracé_au_pixel_Q_Trillot_2022-06-15-19.07-2048x1365.jpg
 caption: "Annecy Classics at the 2022 Annecy Festival. Photo Q. Trillot"

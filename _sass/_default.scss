@@ -120,6 +120,24 @@
   font-size:0.8rem;
 }
 
+/*
+  tags
+*/
+.tags-cloud p {
+  margin: 1em 0 0.5em !important;
+}
+
+.tags-cloud .tag {
+  font-size:.9em;
+}
+
+.tags-post li {
+  white-space: nowrap;
+}
+
+/*
+  image-gallery
+*/
 /*! div style */
 .image-gallery {
   width: 100%;
@@ -138,7 +156,11 @@
   object-fit: cover;
   transform: scale(1);
   transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
   &:hover {
     transform: scale(1.05);
+    z-index: 2;
+    filter: none;
   }
 }

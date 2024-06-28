@@ -32,6 +32,10 @@ h1, h2, h3, h4, h5, h6 {
   color: $dark-gray-color;
 }
 
+h2 {
+  margin: 1.5rem 0 0 0;
+}
+
 a {
   text-decoration: underline;
   color: $dark-gray-color;
@@ -40,12 +44,20 @@ a {
 a:hover {
   color: $link-color;
   border-bottom: none;
+  text-decoration: none;
+  background: #0000ee15;
+}
+
+a:visited, a:active {
+  color: revert;
 }
 
 img {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
+  -webkit-filter: drop-shadow(5px 5px 5px #5959594c);
+  filter: drop-shadow(5px 5px 5px #5959594c);
 }
 
 blockquote {
